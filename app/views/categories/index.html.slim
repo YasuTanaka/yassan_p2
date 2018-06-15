@@ -1,0 +1,6 @@
+table
+  - @categories.each do |item|
+    tr
+      td = item.id
+      td = item.title
+      td = link_to "カテゴリーページへ",category_path(item)
