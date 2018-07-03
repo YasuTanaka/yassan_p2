@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-  has_many :archives, dependent: :destroy
+  has_many :archives
 end
