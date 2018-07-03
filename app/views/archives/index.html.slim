@@ -1,7 +1,7 @@
 h1 圧倒的な食べ物一覧
 
 table
-  - @archives.each do |item|
-    = render partial: "common/archive", locals: {niko: item}
+  - @archives.each do |archive|
+    = render partial: "common/archive", locals: {archive: archive}
 
 = link_to "homeに戻る" , root_path

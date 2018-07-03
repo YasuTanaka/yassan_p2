@@ -1,6 +1,6 @@
 table
-  - @categories.each do |item|
+  - @categories.each do |category|
     tr
-      td = item.id
-      td = item.title
-      td = link_to "カテゴリーページへ",category_path(item)
+      td = category.id
+      td = category.title
+      td = link_to "カテゴリーページへ",category_path(category)
