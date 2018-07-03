@@ -1,8 +1,8 @@
 h1 = @category.title
 
 table
-  - @archives.each do |archive|
+  - @category.archives.each do |archives|
     tr
-      td = archive.id
-      td = archive.title
-      td =link_to "Showページへ" , archive_path(archive)
+      td = archives.id
+      td = archives.title
+      td =link_to "Showページへ" , archive_path(archives)
